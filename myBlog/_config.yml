@@ -26,7 +26,10 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
+
+# ²»äÖÈ¾readme.mdÎÄ¼ş
+
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -80,3 +83,5 @@ theme: landscape
 deploy:
   type: git
   repo: git@github.com:jiangsn/jiangsn.github.io
+
+
