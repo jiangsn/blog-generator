@@ -1,9 +1,9 @@
-# Hexo Configuration
+﻿# Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: jiangx
+title: 知易行难
 subtitle:
 description:
 keywords:
@@ -27,8 +27,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render: README.md
-
-# ����Ⱦreadme.md�ļ�
+# ²»äÖÈ¾readme.mdÎÄ¼þ
 
 
 # Writing
@@ -42,10 +41,15 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace:
+
+prism_plugin:
+  mode: 'preprocess'    # realtime/preprocess
+  theme: 'default'
+  line_number: false    # default false
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -53,7 +57,7 @@ highlight:
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
   path: ''
-  per_page: 10
+  per_page: 7
   order_by: -date
   
 # Category & Tag
@@ -68,15 +72,10 @@ tag_map:
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
-# Pagination
-## Set per_page to 0 to disable pagination
-per_page: 10
-pagination_dir: page
-
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: tocas-ui-morgan
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
